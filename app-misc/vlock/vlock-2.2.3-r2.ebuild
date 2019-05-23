@@ -5,11 +5,12 @@ EAPI=6
 
 inherit pam toolchain-funcs user
 
-COMMIT="f2afd55704bfe0a2d66e6b270d247e9b8a7b1664"
+RESTRICT="mirror"
+S="${WORKDIR}/${PF}"
 
 DESCRIPTION="A console screen locker"
-HOMEPAGE="https://github.com/WorMzy/vlock"
-SRC_URI="https://github.com/WorMzy/vlock/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://github.com/maxux/vlock"
+SRC_URI="https://github.com/maxux/vlock/archive/${PVR}.tar.gz -> ${PVR}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
